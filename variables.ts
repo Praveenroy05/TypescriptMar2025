@@ -128,9 +128,6 @@ if(true){
 }
 console.log(h)
 
-let abc = 30
-abc = "TS"
-console.log(abc)
 
 
 
