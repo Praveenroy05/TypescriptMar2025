@@ -94,3 +94,53 @@ console.log(++num5) // ++8 // 8 // ++8 = 8+1
     // Less than equal to (<=)
     console.log(10 <= 10); // true
     console.log(10 <= 5); // false
+
+
+    // Type annontation
+    // Type Inference
+
+    console.log("**************************************");
+
+    // 3. Logical Op - Evaluates a boolean expression and return us a result as boolean (true or false)
+    // 1. AND (&&) - checks if both conditions are true
+    // 2. OR (||) - check if anyone of the condition is true or not
+    // 3. NOT (!) - negate the boolean value (true to false and false to true)
+
+
+    // 1. AND (&&)
+
+    // true && true - true
+    // true && false - false
+    // false && true - false
+    // false && false - false
+
+    console.log((23>21) && (4>3))// true
+    console.log((23>21) && (4<3)) // false
+    console.log((23<21) && (4>3)) // false
+    console.log((23<21) && (4<3)) // false
+
+    // 2. OR (||)
+
+    // true || true - true
+    // true || false - true
+    // false || true - true
+    // false || false - false
+
+    console.log("OR", (23>21) || (4>3)) // true
+    console.log("OR",(23>21) || (4<3)) // true
+    console.log("OR",(23<21) || (4>3)) // true
+    console.log("OR",(23<21) || (4<3)) // false
+
+    // 3. NOT (!)
+    // !true - false
+    // !false - true
+    console.log("NOT",!(3>2)) // false
+    console.log("NOT",!(0>1)) // true
+
+
+    // 4. Assignment Op (=)
+    // Assigns the value of the right operand to the left operand
+    let var1 :number = 10
+
+
+   
