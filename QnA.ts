@@ -38,3 +38,6 @@ let num3 : number = 20
 let num4 : string = "20"
 console.log(num3*num4);
 
+// controlling the data types in array
+
+

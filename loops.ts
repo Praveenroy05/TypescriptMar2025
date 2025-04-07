@@ -42,7 +42,7 @@ increment/decrement - Increment or decrement the variable after each execution. 
 
 */
 
-for(let i =1 ; ; i++){ // 1++ // 1+1 = 2++ = 2+1 // 5++ = 5+1
+for(let i =1 ;i<=10 ; i++){ // 1++ // 1+1 = 2++ = 2+1 // 5++ = 5+1
    console.log(i); // 1 2 3 4 5
  
 }
