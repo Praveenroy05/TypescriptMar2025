@@ -73,11 +73,50 @@ for(let ele in array2){
     console.log(array2[ele]);
 }
 
-// for in loop
+// let myTuple : [string, number, boolean] = [];
+
+// myTuple.push("10")
+
+console.log("**************************");
+
+let myArray = [10,20,30, "TS", "JS", "apple", "blue", 50]
+console.log(myArray);
 
 
+//1. push(element..... ) - Add the elements to the end of an array
+//Syntax:
+// arrayName.push(element1, element2, element3,.....)
+myArray.push("orange", 60, 40)
+console.log("Push", myArray);
 
+// 2. pop() - Remove the last element from the array
+// Syntax:
+// arrayName.pop()
+console.log("Pop", myArray.pop()); // 40
+console.log("Pop", myArray);
 
+// 3. unshift(element....) - Add the element(s) to the beginning of an array
+// Syntax:
+// arrayName.unshift(element1, element2, element3,.....)
+ console.log(myArray.unshift("red", 5))
+ console.log("Unshift", myArray);
 
+// 4. shift() - Remove the first element from the array
+// Syntax:
+// arrayName.shift()
+console.log("Shift", myArray.shift());
+console.log(myArray);
 
+// 5. splice(startIndex, numberOfElementToDelete, ele1, ele2,......)
+// Syntax:
+// arrayName.splice(startIndex, numberOfElementToDelete, ele1, ele2,......)
+// startIndex - The position where you want to add the element
+// numberOfElementToDelete - The number of elements you want to delete from the array at the startIndex
+// ele1, ele2,...... - The elements you want to add to the array at the startIndex
+
+let myArray1 = [10,20,30,405,60,70]
+myArray1.splice(2 ,"67", "xyz", "abc")
+console.log(myArray1);
+
+// 6. slice(startIndex, endIndex)
 
