@@ -118,5 +118,65 @@ let myArray1 = [10,20,30,405,60,70]
 myArray1.splice(2 ,"67", "xyz", "abc")
 console.log(myArray1);
 
-// 6. slice(startIndex, endIndex)
+// 6. slice(startIndex, endIndex) - return the portion of an array
+// Syntax:
+// arrayName.slice(startIndex?, endIndex?)
+// startIndex - The position where you want to start the slice
+// endIndex(Exclusive) - The position where you want to end the slice
 
+let myArray2 = ["TS", "a", "b", "c", "d", 10, 30, 40]
+console.log("Slice() ", myArray2.slice())
+console.log("Slice() ", myArray2.slice(3))
+console.log("Slice() ", myArray2.slice(2, 5)) // 2 3 4
+//console.log("Slice() ", myArray2.slice(-1, -3)) // -3 -2
+let arrResult = myArray2.slice(2, 5)
+console.log(arrResult);
+
+let arr2 :any[] = []
+//arr2 = myArray.slice(2,5)
+//console.log(arr2);
+arr2 = arr2.concat(myArray.slice(2,5))
+console.log(arr2);
+
+// 7. toString()
+// Syntax:
+// arrayName.toString()
+console.log(myArray2.toString());
+
+// 8. concat()
+// Syntax:
+// arrayName.concat(arrayName1, arrayName2, arrayName3,.....)
+console.log(myArray2.concat([1,2,3,4,5,6,7]))
+console.log(myArray2);
+
+// 9. indexOf(element)
+// Syntax:
+// arrayName.indexOf(element)
+
+// let myArray2 = ["TS", "a", "b", "c", "d", 10, 30, , "40", 40]
+
+console.log(myArray2.indexOf(40));
+
+// 10. lastIndexOf(element)
+// Syntax:
+// arrayName.lastIndexOf(element)
+console.log(myArray2.lastIndexOf("d"));
+
+// forEach(fun), map(fun), filter(fun), reduce(fun), some(fun), every(fun)
+
+let myArray3 = [1,2,3,4,5,"TS", "JS", "blue"]
+
+// 11. forEach(function)
+// Syntax:
+// arrayName.forEach(function(element, index, arrayName){....})
+// element - The current element being processed in the array.
+// index(optional) - The index of the current element being processed in the array.
+// arrayName(optional) - The array object itself.
+
+myArray3.forEach(function(ele, index, t){
+    console.log(ele, index, t)
+    if(ele == 4){
+        t.pop()
+    }
+})
+console.log(myArray3);
