@@ -180,3 +180,83 @@ myArray3.forEach(function(ele, index, t){
     }
 })
 console.log(myArray3);
+
+// 12. map(function) - Creates a new array with the result of calling the function on every element of an array
+// Return the array with exactly the same number of element whatever we have in the orignal array
+// Syntax:
+// arrayName.map(function(element, index, arrayName){....})
+
+let myArray4 = [100,200,300,400,500]
+let er = 86
+const inr = myArray4. map(function(element){
+    return element * er
+})
+console.log(inr);
+
+// 13. filter(function) - Create a new array with all the elements that passes the function
+// Either have the exactly same number of element or less than
+// Syntax:
+// arrayName.filter(function(element, index, arrayName){....})
+
+const users = [
+    { name: 'John', active: true },
+    { name: 'Jane', active: false },
+    { name: 'Alice', active: true },
+]
+let activeUser = users.filter(function(element){
+    return element.active
+})
+console.log(activeUser);
+
+// 14. reduce(function, initialValue(optional)) - Function will apply on every element of an array and return the result as a single value
+// Syntax:
+// arrayName.reduce(function(accumlator, currentValue, index, array){...}, initialValue)
+// accumulator - The accumulated value that we get from the previous iteration
+// currentValue - The current element being processed in the array.
+// index - The index of the current element being processed in the array.
+// array - The array object itself.
+
+
+let myArray5 = [12,45,67,3423,34,67]
+
+let sum=0
+for(let i=0; i<myArray5.length; i++){
+    sum = sum+ myArray5[i] // sum = 0+12 = 12, sum = 12+45
+}
+console.log(sum);
+
+let reduce = myArray5.reduce(function(sum, num){
+    return sum * num
+})
+console.log(reduce);
+
+
+let strArray = ["This", "Is", "JS"]
+let str = strArray.reduce(function(acc, word){
+    return acc + " " +word
+})
+console.log(str);
+
+
+// 15. some(function) - Check whether at least 1 element in the array passes the function then it will retun true else false
+// Syntax:
+// arrayName.some(function(element, index, array){...})
+let numbers = [1, 2, 3, 5, 5, 7]
+let isEven = numbers.some(function(num){
+    return num % 2 == 0
+    })
+    console.log(isEven); 
+
+
+//16. every(function) - Check whether at all the elements in the array passes the function then it will retun true else false
+// Syntax:
+// arrayName.every(function(element, index, array){...})
+let number = [1, 1, 3, 5, 5, 7]
+let isOdd = number.every(function(num){
+    return num % 2 != 0
+})
+console.log(isOdd);
+
+
+
+
