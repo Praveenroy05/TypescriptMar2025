@@ -188,9 +188,7 @@ console.log(myArray3);
 
 let myArray4 = [100,200,300,400,500]
 let er = 86
-const inr = myArray4. map(function(element){
-    return element * er
-})
+const inr = myArray4. map(element => element *er)
 console.log(inr);
 
 // 13. filter(function) - Create a new array with all the elements that passes the function
