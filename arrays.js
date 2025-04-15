@@ -50,3 +50,16 @@ for (var ele in array2) {
 }
 var myTuple = ["TS", 20, "true"];
 //
+
+// let person = {
+//     name1: "Javascript",
+//     age : 15,
+//     city: "NY",
+//     isEmployee : true
+// }
+
+// // 1. obj.key
+// // 2. obj["key"]
+
+// console.log(person.name1);
+// console.log(person[name1]);
