@@ -40,4 +40,6 @@ console.log(num3*num4);
 
 // controlling the data types in array
 
+// merging the interface - new things to check
+
 
