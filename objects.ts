@@ -127,6 +127,8 @@ obj.parameter2
 
 */
 
+let make1
+
 function Car(make, model, year){
     this.make1 = make;
     this.model1 = model;
